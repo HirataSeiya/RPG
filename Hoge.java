@@ -3,23 +3,22 @@ package Method_task;
 public class Hoge {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
-		Introduce i1;
-		i1 = new Introduce();
+		RPG r1;
+		r1 = new RPG();
 
-		i1.name = "アルス";
-		i1.hp = 100;
-		i1.mp = 50;
+		r1.name = "アルス";
+		r1.hp = 100;
+		r1.mp = 50;
 
-		Introduce i2;
-		i2 = new Introduce();
+		RPG r2;
+		r2 = new RPG();
 
-		i2.name = "クラウド";
-		i2.hp = 50;
-		i2.mp = 100;
+		r2.name = "クラウド";
+		r2.hp = 50;
+		r2.mp = 100;
 		
-		i1.hello();
-		i2.hello();
+		r1.Introduce();
+		r2.Introduce();
 	}
 
 }
