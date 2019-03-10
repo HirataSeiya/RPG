@@ -28,14 +28,16 @@ public class Character{
 		System.out.println("");
 	}
 
-	public void damage(String name,int power) {
-		System.out.println(name+"は"+power+"のダメージを受けた!");
+	public void damage(int power) {
 		this.hp -= power;
 		System.out.println(this.name+"の体力は残り"+this.hp+"だ!");
 	}
 
-	public void attack(String name) {
+	public void attack(Character target) {
 		System.out.println(name+"の攻撃");
+		System.out.println(this.power+"のダメージ!");
+		target.damage(this.power);
+
 	}
 
 
