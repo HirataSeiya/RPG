@@ -34,7 +34,7 @@ public class Character{
 	}
 
 	public void attack(Character target) {
-		System.out.println(name+"の攻撃");
+		System.out.println(this.name+"の攻撃");
 		System.out.println(this.power+"のダメージ!");
 		target.damage(this.power);
 
