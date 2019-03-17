@@ -1,9 +1,9 @@
 package Method_task;
 
 public class Character{
-	public String name;
-	public int hp,mp;
-	public int power;
+	protected String name;
+	protected int hp,mp;
+	protected int power;
 
 
 	public Character() { //初期値
@@ -31,6 +31,13 @@ public class Character{
 	public void damage(int power) {
 		this.hp -= power;
 		System.out.println(this.name+"の体力は残り"+this.hp+"だ!");
+		if (this.hp == 0){
+
+			System.out.println("---試合終了---");
+		}else {
+			System.out.println("ターンエンド");
+		}
+		System.out.println("");
 	}
 
 	public void attack(Character target) {
