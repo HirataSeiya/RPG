@@ -17,17 +17,17 @@ public class Profile {
 		party2[0] = new Magician("クラウド",50,100,25);
 		party2[1] = new Knight("スコール",40,50,70);
 
-		    int i = 0;
-			for(i=0;i<=m1;i++) {
-				party1[i].Introduce();
-				party1[i].attack(party2[i]);
-				System.out.println("--------------------------");
-			}
+	    int i = 0;
+	    for(i=0;i<=m1;i++) {
+		party1[i].Introduce();
+			party1[i].attack(party2[i]);
+			System.out.println("--------------------------");
+		}
 
-			for(i=0;i<=m1;i++) {
-				party2[i].Introduce();
-				party2[i].attack(party1[i]);
-				System.out.println("--------------------------");
+		for(i=0;i<=m1;i++) {
+			party2[i].Introduce();
+			party2[i].attack(party1[i]);
+			System.out.println("--------------------------");
 		}
 	}
 }
