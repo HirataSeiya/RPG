@@ -33,7 +33,8 @@ public class Character{
 		System.out.println(this.name+"の体力は残り"+this.hp+"だ!");
 		if (this.hp == 0){
 
-			System.out.println("---試合終了---");
+			System.out.println("---"+this.name+"は力尽きた---");
+			System.exit(0);
 		}else {
 			System.out.println("ターンエンド");
 		}
