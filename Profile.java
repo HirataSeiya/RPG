@@ -15,7 +15,7 @@ public class Profile {
 		party2[0] = new Magician("クラウド",50,70,25);
 		party2[1] = new Knight("スコール",100,50,70);
 
-	    for(int i=0;i<m1;i++) {
+		for(int i=0;i<m1;i++) {
 	    	party1[i].introduce();
 			party1[i].attack(party2[i]);
 			System.out.println("--------------------------");
