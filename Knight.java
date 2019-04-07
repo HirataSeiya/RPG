@@ -2,11 +2,12 @@ package Method_task;
 
 
 public class Knight extends Character{
-	public Knight(String name,int hp,int mp,int power) {
+	 Knight(String name,int hp,int mp,int power) {
 		super(name,hp,mp,power);
 	}
 
-	public void introduce() {
+	@Override
+	void introduce() {
 		System.out.println("オレの名前は"+this.name+",体力は"+this.hp+"魔力は"+mp+"でパワーが"+this.power);
 	}
 
@@ -16,6 +17,7 @@ public class Knight extends Character{
 		System.out.println(this.power+"のダメージ!");
 	}
 
+	@Override
 	public void attack(Character knight) {
 		ken();
 		knight.damage(this.power);
